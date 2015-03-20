@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="340dp">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="235dp"
+        android:id="@+id/browerImages"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#ffb81604"
+        android:onClick="onClick"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/browerImages"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ProjectName"
+        android:id="@+id/projectName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="28dp"
+        android:textSize="30dp"
+        android:onClick="onClick"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/projectName"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Undertakings | Experience | Rating"
+        android:id="@+id/workerDetails"
+        android:layout_marginLeft="20dp"
+        android:textSize="15dp"
+        android:onClick="onClick"/>
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/smallDP"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/browerImages"
+        android:onClick="onClick"
+        android:layout_marginBottom="-30dp"
+        android:layout_marginRight="48dp"
+         />
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="$$$"
+        android:id="@+id/rate"
+        android:onClick="onClick"
+        android:layout_marginTop="180dp"
+        android:background="#ff372f37"
+        android:gravity="right"
+        android:textColor="#fffff8fd"
+        android:paddingRight="10dp"
+        android:alpha=".5"
+        android:autoText="true" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/favorited"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:checked="false" />
+</RelativeLayout>
